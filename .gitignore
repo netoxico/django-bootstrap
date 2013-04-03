@@ -1,0 +1,14 @@
+.DS_Store
+*.pyc
+*.pyo
+*.swp
+
+local_settings.py
+*.db
+
+virtualenv
+.codeintel
+*.sublime-project
+*.sublime-workspace
+
+/public
