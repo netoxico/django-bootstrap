@@ -9,7 +9,7 @@ from django.conf import settings
 
 urlpatterns = patterns(
     '',
-    url(r'^$', 'baseapp.views.home', name='home'),
+    url(r'^$', '{{project_name}}.views.home', name='home'),
     # url(r'^twinkie/', include('twinkie.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
