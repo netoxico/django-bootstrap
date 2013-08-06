@@ -15,7 +15,7 @@ django-admin.py startproject --template=https://github.com/netoxico/django-boots
 ```
 Install requirements
 ```
-pip install -r requirements.txt
+pip install -r requirements/development.txt
 ```
 
 Done.
