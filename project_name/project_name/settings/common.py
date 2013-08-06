@@ -6,7 +6,7 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    ('Ernesto Vargas', 'me@netoxico.com'),
+    ('Your Name', 'your_email@example.com'),
 )
 
 MANAGERS = ADMINS
@@ -158,8 +158,3 @@ COMPRESS_PRECOMPILERS = (
 )
 
 #USE_X_FORWARDED_HOST = True
-
-try:
-    from local_settings import *
-except ImportError:
-    pass
