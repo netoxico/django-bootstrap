@@ -1,6 +1,6 @@
 ## Django bootstrap project template
 ### Includes
-* twitter bootstrap
+* twitter bootstrap 3
 * django-annoying
 * django-compressor
 
