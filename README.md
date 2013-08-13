@@ -1,9 +1,10 @@
 ## Django bootstrap project template
 ### Includes
-* twitter bootstrap 3
+* Twitter bootstrap 3
 * django-annoying
 * django-compressor
-* 
+* django-debug-toolbar
+* django-extensions
 
 ### How to use
 Create virtual environment, change project_name with your projects name :D
@@ -21,7 +22,8 @@ Install requirements
 pip install -r requirements/development.txt
 ```
 
-Set DJANGO_SETTINGS_MODULE environment
+Set DJANGO_SETTINGS_MODULE environment. 'development', 'production', 'staging'
+For development environment:
 ```sh
 sudo sh -c 'echo "export DJANGO_SETTINGS_MODULE=development" >> /etc/profile.d/environment.sh' && source /etc/profile.d/environment.sh
 ```
