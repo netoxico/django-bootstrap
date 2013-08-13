@@ -22,9 +22,14 @@ Install requirements
 pip install -r requirements/development.txt
 ```
 
-Set DJANGO_SETTINGS_MODULE environment. 'development', 'production', 'staging'
+Set 'DJANGO_SETTINGS_MODULE' environment. Make shure to change project_name
+* 'project_name.settings.development'
+* 'project_name.settingsproduction',
+* 'project_name.settingsstaging'
+
 For development environment:
 ```sh
-sudo sh -c 'echo "export DJANGO_SETTINGS_MODULE=development" >> /etc/profile.d/environment.sh' && source /etc/profile.d/environment.sh
+sudo sh -c 'echo "export DJANGO_SETTINGS_MODULE=project_name.settings.development" \
+>> /etc/profile.d/environment.sh' && source /etc/profile.d/environment.sh
 ```
 Done.
