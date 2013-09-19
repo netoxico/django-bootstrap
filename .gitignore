@@ -3,7 +3,6 @@
 *.pyo
 *.swp
 
-local_settings.py
 *.db
 
 virtualenv
