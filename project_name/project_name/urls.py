@@ -11,7 +11,7 @@ from django.conf import settings
 urlpatterns = patterns(
     '',
     url(r'^$', '{{project_name}}.views.home', name='home'),
-    # url(r'^twinkie/', include('twinkie.foo.urls')),
+    # url(r'^{{project_name}}/', include('{{project_name}}.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
@@ -23,4 +23,6 @@ urlpatterns = patterns(
 )
 
 if settings.DEBUG:
-    urlpatterns += staticfiles_urlpatterns() + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    urlpatterns += staticfiles_urlpatterns() + static(
+        settings.MEDIA_URL, document_root=settings.MEDIA_ROOT
+    )
