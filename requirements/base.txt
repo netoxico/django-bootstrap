@@ -1,3 +1,5 @@
 Django==1.5.1
 django-annoying
 django-compressor
+South==0.8.4
+selenium
