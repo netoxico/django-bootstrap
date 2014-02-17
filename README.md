@@ -12,8 +12,13 @@ Create virtual environment, change project_name with your projects name :D
 mkvirtualenv project_name
 ```
 
-Run django startproject with the --template option
+Install django
+```sh
+pip install django
 ```
+
+Run django startproject with the --template option
+```sh
 django-admin.py startproject --template=https://github.com/netoxico/django-bootstrap/archive/master.zip project_name
 ```
 
