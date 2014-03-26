@@ -36,7 +36,6 @@ If no 'PROJECT_ENV' especified takes 'development' settings as default
 
 For development environment:
 ```sh
-sudo sh -c 'echo "export PROJECT_ENV=development" \
->> /etc/profile.d/environment.sh' && source /etc/profile.d/environment.sh
+sudo sh -c 'echo "export PROJECT_ENV=development" >> /etc/profile.d/environment.sh' && source /etc/profile.d/environment.sh
 ```
 Done.
