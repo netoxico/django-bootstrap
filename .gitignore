@@ -10,4 +10,4 @@ virtualenv
 *.sublime-project
 *.sublime-workspace
 
-/public
+*/public/static/
