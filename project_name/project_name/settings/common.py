@@ -169,3 +169,4 @@ COMPRESS_PRECOMPILERS = (
 )
 
 #USE_X_FORWARDED_HOST = True
+TEST_RUNNER = 'django.test.runner.DiscoverRunner'
