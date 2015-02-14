@@ -164,6 +164,7 @@ LOGGING = {
 
 COMPRESS_ENABLED = True
 COMPRESS_OFFLINE = False
+COMPRESS_CSS_HASHING_METHOD = 'content'
 COMPRESS_PRECOMPILERS = (
     ('text/less', 'lessc {infile} {outfile}'),
 )
