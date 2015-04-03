@@ -3,8 +3,6 @@
 * Twitter bootstrap 3
 * django-annoying
 * django-compressor
-* django-debug-toolbar
-* django-extensions
 
 ### How to use
 Create virtual environment, change project_name with your projects name :D
