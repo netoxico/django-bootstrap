@@ -10,6 +10,7 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+
 BASE_DIR = os.path.join(os.path.abspath(os.path.dirname(__file__)), '..', '..')
 
 
@@ -48,25 +49,31 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.security.SecurityMiddleware',
 )
-
-TEMPLATE_CONTEXT_PROCESSORS = (
-    'django.contrib.auth.context_processors.auth',
-    'django.core.context_processors.debug',
-    'django.core.context_processors.i18n',
-    'django.core.context_processors.media',
-    'django.core.context_processors.static',
-    'django.core.context_processors.tz',
-    'django.contrib.messages.context_processors.messages',
-    '{{project_name}}.context_processors.git'
-)
-
-TEMPLATE_DIRS = (
-    os.path.join(BASE_DIR, 'templates'),
-)
-
 
 ROOT_URLCONF = '{{project_name}}.urls'
+
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [os.path.join(BASE_DIR, 'templates'), ],
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.core.context_processors.i18n',
+                'django.core.context_processors.media',
+                'django.core.context_processors.static',
+                'django.core.context_processors.tz',
+                'django.contrib.messages.context_processors.messages',
+                '{{project_name}}.context_processors.git'
+            ],
+        },
+    },
+]
 
 WSGI_APPLICATION = '{{project_name}}.wsgi.application'
 
