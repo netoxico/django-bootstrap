@@ -14,7 +14,7 @@ https://docs.djangoproject.com/en/{{ docs_version }}/ref/settings/
 import os
 from unipath import FSPath as Path
 
-BASE_DIR = Path(__file__).absolute().parent.parent
+BASE_DIR = Path(__file__).absolute().parent.parent.parent
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
