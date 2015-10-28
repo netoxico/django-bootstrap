@@ -1,5 +1,5 @@
-Django==1.8
+Django==1.8.5
 django-annoying==0.8.1
-django-compressor==1.4
+django-compressor==1.5
 bpython==0.14.1
 Unipath==1.1
